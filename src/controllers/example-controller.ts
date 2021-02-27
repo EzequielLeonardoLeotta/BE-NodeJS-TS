@@ -5,6 +5,6 @@ export const exampleRoute = async (req: Request, res: Response): Promise<void> =
     try {
         await example(req, res);
     } catch (e) {
-        return e;
+        throw e;
     }
 };
